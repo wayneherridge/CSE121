@@ -3,58 +3,54 @@
 /* VARIABLES */
 
 // Step 1: declare and instantiate a variable to hold your name
-let name = 'Wayne Herridge';
-console.log(name);
-// Step 2: place the value of the name variable into the HTML file (hint: document.querySelector())
-document.querySelector('#name').textContent = name;
-// Step 3: declare and instantiate a variable to hold the current year
-let currentDate = new Date();
-console.log(currentDate);
+const myName = 'Brother Thayne';
 
-let currentYear = currentDate.getFullYear();
-console.log(currentYear);
+// Step 2: place the value of the name variable into the HTML file (hint: document.querySelector())
+document.querySelector('#name').textContent = myName;
+
+// Step 3: declare and instantiate a variable to hold the current year
+const currentYear = 2020;
 
 // Step 4: place the value of the current year variable into the HTML file
 document.querySelector('#year').textContent = currentYear;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
-let myImage = 'images/WHerridge.jpeg'
+const myPicture = 'images/photo.jpg';
 
 // Step 6: copy your image into the "images" folder
-// Completed as a drag and drop exercise within the folder structure
+
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-document.querySelector('#myImage').src = myImage;
+document.querySelector('img').setAttribute('src', myPicture);
 
 
 
 /* ARRAYS */
 
 // Step 1: declare and instantiate an array variable to hold your favorite foods
-let myFavFoods = ['Indian Curry', ' Pizza', ' Fish and Chips', ' Galaxy Chocolate']
-console.log(myFavFoods);
+const favoriteFoods = ['Fettucini', 'Steak', 'Chicken', 'Shrimp'];
+
 // Step 2: place the values of the favorite foods variable into the HTML file
-document.querySelector('#food').textContent = myFavFoods;
+document.querySelector('#food').textContent = favoriteFoods;
 
 // Step 3: declare and instantiate a variable to hold another favorite food
-let extraFood = ' Subway';
+const anotherFavoriteFood = 'Baked Potato';
 
 // Step 4: add the variable holding another favorite food to the favorite food array
-myFavFoods.push(extraFood);
+favoriteFoods.push(anotherFavoriteFood);
 
 // Step 5: repeat Step 2
-document.querySelector('#food').textContent = myFavFoods;
-console.log(myFavFoods);
+document.querySelector('#food').textContent = favoriteFoods;
 
 // Step 6: remove the first element in the favorite foods array
-myFavFoods.shift();
+favoriteFoods.shift();
 
 // Step 7: repeat Step 2
-document.querySelector('#food').textContent = myFavFoods;
-console.log(myFavFoods);
+document.querySelector('#food').textContent = favoriteFoods;
 
 // Step 8: remove the last element in the favorite foods array
-myFavFoods.pop();
+favoriteFoods.pop();
 
 // Step 7: repeat Step 2
-document.querySelector('#food').textContent = myFavFoods;
-console.log(myFavFoods);
+document.querySelector('#food').textContent = favoriteFoods;
+
+
