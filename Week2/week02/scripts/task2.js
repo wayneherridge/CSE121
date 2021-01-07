@@ -3,24 +3,28 @@
 /* VARIABLES */
 
 // Step 1: declare and instantiate a variable to hold your name
-
-
+let name = 'Wayne Herridge';
+console.log(name);
 // Step 2: place the value of the name variable into the HTML file (hint: document.querySelector())
-
-
+document.querySelector('#name').textContent = name;
 // Step 3: declare and instantiate a variable to hold the current year
+let currentDate = new Date();
+console.log(currentDate);
 
+let currentYear = currentDate.getFullYear();
+console.log(currentYear);
 
 // Step 4: place the value of the current year variable into the HTML file
-
+document.querySelector('#year').textContent = currentYear;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
-
+let myImage = 'images/WHerridge.jpg'
 
 // Step 6: copy your image into the "images" folder
 
-// Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
 
+// Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
+document.querySelector('#myImage').src = myImage;
 
 
 
@@ -51,6 +55,3 @@
 
 
 // Step 7: repeat Step 2
-
-
-
