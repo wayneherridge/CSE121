@@ -73,10 +73,11 @@ const currentDate = new Date();
 console.log(currentDate);
 
 // Step 2: Declare a variable to hold the current year
-var currentYear = currentDate.getFullYear();
-console.log(currentYear);
+let currentYear;
 
 // Step 3: Using the variable declared in Step 1, call the built-in getFullYear() method/function and assign it to the variable declared in Step 2
+currentYear = currentDate.getFullYear();
+console.log(currentYear);
 
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
 
