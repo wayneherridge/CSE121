@@ -50,14 +50,31 @@ document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNum
 
 // Step 8: Using any of the three function declaration types, repeat Steps 1-5 with new functions named divide and divideNumbers and HTML form controls with IDs of dividend, divisor, quotient and divideNumbers
 
+const divide = (number1, number2) => number1 / number2;
+
+const divideNumbers = () => {
+    let dividend = parseInt(document.querySelector('#dividend').value);
+    let divisor = parseInt(document.querySelector('#divisor').value);
+    let result = divide(dividend, divisor);
+    document.querySelector('#quotient').value = result;
+}
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
+
 // Step 9: Test all of the mathematical functionality of the task3.html page.
+
+// All working - No errors in the console
 
 
 /* BUILT-IN METHODS */
 
 // Step 1: Declare and instantiate a variable of type Date to hold the current date
 
+const currentDate = new Date();
+console.log(currentDate);
+
 // Step 2: Declare a variable to hold the current year
+var currentYear = currentDate.getFullYear();
+console.log(currentYear);
 
 // Step 3: Using the variable declared in Step 1, call the built-in getFullYear() method/function and assign it to the variable declared in Step 2
 
