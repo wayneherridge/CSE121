@@ -80,7 +80,7 @@ currentYear = currentDate.getFullYear();
 console.log(currentYear);
 
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
-
+document.querySelector('#year').value = currentYear;
 
 /* ARRAY METHODS */
 
